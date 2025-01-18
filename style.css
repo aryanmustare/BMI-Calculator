@@ -1,0 +1,299 @@
+:root {
+    --mainColor: #080B1C;
+    --functionalColor: #E81D58;
+    --fontColor: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    color: rgba(var(--fontColor), 0.7);
+    transition-duration: 0.5s;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 260px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.screen_1 {
+    position: relative;
+}
+
+.screen_2 {
+    width: 100%;
+    height: 356px;
+    position: absolute;
+    left: 100%;
+    bottom: 75px;
+    background-color: var(--mainColor);
+}
+
+.resultTitle {
+    font-size: 25px;
+    color: var(--fontColor);
+    margin: 20px 30px;
+    text-align: left;
+}
+
+.blockOutside {
+    padding: 5px 30px;
+}
+
+.blockInside {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 25px 0px 15px 0px;
+}
+
+.resultBMI {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--functionalColor);
+}
+
+.suggestBMI {
+    padding: 20px 0px;
+}
+
+.suggestBMI span {
+    color: var(--fontColor);
+}
+
+.suggestion {
+    padding: 20px;
+    color: var(--fontColor);
+}
+
+.title {
+    padding: 30px 0px 20px 0px;
+}
+
+.title i {
+    position: absolute;
+    font-size: 20px;
+    left: 30px;
+    top: 25px;
+}
+
+.genderBlock {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 10px auto;
+    padding: 10px;
+    border: solid 2px transparent;
+}
+
+.genderBlock:hover {
+    border-color: var(--functionalColor);
+    cursor: pointer;
+}
+
+.genderBlock i {
+    font-size: 50px;
+}
+
+.genderText {
+    top: 10px;
+}
+
+.genderClicked {
+    background-color: var(--functionalColor);
+}
+
+.blockText {
+    margin-bottom: 5px;
+}
+
+.heightBlock, .weightBlock, .ageBlock {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.heightInput {
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--fontColor);
+    width: 100%;
+    border-color: transparent transparent var(--fontColor) transparent;
+    border-width: 1px;
+}
+
+.weightNum, .ageNum {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--fontColor);
+}
+
+.circleBtn {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-color: rgba(var(--fontColor), 0.15);
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.circleBtn:hover {
+    background-color: var(--functionalColor);
+    user-select: none;
+}
+
+.calculateBtn {
+    padding: 20px 0px;
+    margin-top: 20px;
+    background-color: var(--functionalColor);
+    color: var(--fontColor);
+    cursor: pointer;
+}
+
+.calculateBtn:hover {
+    background-color: var(--fontColor);
+    color: var(--functionalColor);
+}
+
+
+.heightBlock {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%; /* Full width for the height section */
+}
+
+.scaleIcon {
+    font-size: 30px;
+    color: var(--fontColor);
+    margin-bottom: 10px;
+}
+
+.heightRange {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: var(--functionalColor);
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.heightRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--fontColor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.heightRange::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--fontColor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.heightValue {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--fontColor);
+    margin-top: 10px;
+}
+
+.weightAgeBlock {
+    display: flex;
+    justify-content: space-between; 
+    margin: 10px 0;
+    width: 100%;
+}
+
+.weightBlock, .ageBlock {
+    display: inline-block;
+    width: 45%; 
+    text-align: center;
+}
+
+.weightBlock {
+    margin-right: 5%; 
+}
+
+
+.blockText {
+    margin-bottom: 5px;
+}
+
+.weightNum, .ageNum {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--fontColor);
+}
+
+.circleBtn {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-color: rgba(var(--fontColor), 0.15);
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.circleBtn:hover {
+    background-color: var(--functionalColor);
+    user-select: none;
+}
+
+
+.calculateBtn {
+    width: 100%;  
+    max-width: 750px;  /
+    padding: 15px 30px;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #E81D58;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.screen_2 .calculateBtn {
+    bottom: 20px;  
+    position: absolute;
+}
+
